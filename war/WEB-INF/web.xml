@@ -9,5 +9,15 @@
   <welcome-file-list>
     <welcome-file>StockWatcher.html</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>jsonStockData</servlet-name>
+  	<servlet-class>com.google.gwt.sample.stockwatcher.server.JsonStockData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>jsonStockData</servlet-name>
+  	<url-pattern>/stockwatcher/stockPrices</url-pattern>
+  </servlet-mapping>
 
 </web-app>
